@@ -71,6 +71,7 @@ video{
     bottom: 2%;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+    border-radius: 20%;
 }
 .images:hover .shape{
     bottom: 40px;
@@ -84,7 +85,7 @@ video{
     position: absolute;
     float: right;
     bottom: 130px;
-    right: 100px;
+    right: 100px;;
 }
 .images2 img{
     height: 100%;
@@ -94,15 +95,14 @@ video{
     bottom: 2%;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+    border-radius: 20%;
 }
 
 img:hover{
     opacity: 0.5;
     cursor: pointer;
 }
-img{
-    border-radius: 20%;
-}
+
 .box{
     width: 700px;
     height: 150px;
@@ -125,7 +125,7 @@ img{
 .box3{
     width: 430px;
     float: left;
-    height: 250px;
+    height: 300px;
     background-color: rgb(221, 250, 177);
     margin-left: 200px;
     margin-top: 50px;
@@ -166,3 +166,24 @@ ol li {
 ul li {
     margin-left: 2.5em;
 }
+.container {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .container img {
+    width: 50%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap; /* 折り返しを許可 */
+    width: 1500px; /* 幅を3の倍数に設定 */
+    gap: 10px; /* 画像間の間隔 */
+  }
+  
+  .flex-container img {
+    width: calc(100% / 3); /* 幅を3分の1にする */
+    height: auto; /* 高さは自動調整 */
+    object-fit: cover; /* 画像が領域に合うように調整 */
+  }
